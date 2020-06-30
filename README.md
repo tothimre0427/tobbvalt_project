@@ -5,7 +5,7 @@ Egy kamera (esetünkben egyszerűsítettük a helyzetet, képpel dolgozunk) feli
 eltudunk tárolni az adatázisunkban. Az adatbázis tárolja az autó rendszámát, illetve felvétel időpontját. Továbbiakban már nem
 lenne nehéz kiszámolni a parkolás időtartamát sem. (ha mégegyszer detektáljuk a rendszámot, a két időpontot vonja ki egy másból).
 
-*Esetünkben ez két nagyobb feladatot jelent:
+**Esetünkben ez két nagyobb feladatot jelent:**
 -Rendszám felismerés(opencv,ocr,tesseract)
 -Eltárolása/adatbázisba foglalása(sqlite3)
 
