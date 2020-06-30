@@ -1,11 +1,11 @@
 # tobbvalt_project
-Röviden a projektről:
+## Röviden a projektről:
 Projektünk célja egy olyan rendszer megvalósítása, ami a hétköznapi életben is szinte naponta van használva a parkolók esetén. 
 Egy kamera (esetünkben egyszerűsítettük a helyzetet, képpel dolgozunk) felismeri egy rendszámot, string-et képez belőle, amit
 eltudunk tárolni az adatázisunkban. Az adatbázis tárolja az autó rendszámát, illetve felvétel időpontját. Továbbiakban már nem
 lenne nehéz kiszámolni a parkolás időtartamát sem. (ha mégegyszer detektáljuk a rendszámot, a két időpontot vonja ki egy másból).
 
-Esetünkben ez két nagyobb feladatot jelent:
+*Esetünkben ez két nagyobb feladatot jelent:
 -Rendszám felismerés(opencv,ocr,tesseract)
 -Eltárolása/adatbázisba foglalása(sqlite3)
 
