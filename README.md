@@ -6,8 +6,8 @@ eltudunk tárolni az adatázisunkban. Az adatbázis tárolja az autó rendszám�
 lenne nehéz kiszámolni a parkolás időtartamát sem. (ha mégegyszer detektáljuk a rendszámot, a két időpontot vonja ki egy másból).
 
 **Esetünkben ez két nagyobb feladatot jelent:**
--Rendszám felismerés(opencv,ocr,tesseract)
--Eltárolása/adatbázisba foglalása(sqlite3)
+- Rendszám felismerés(opencv,ocr,tesseract)
+- Eltárolása/adatbázisba foglalása(sqlite3)
 
 OCR, szövegfelismerés:
 
