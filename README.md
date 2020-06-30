@@ -1,20 +1,27 @@
 # tobbvalt_project
 ## Röviden a projektről:
-Projektünk célja egy olyan rendszer megvalósítása, ami a hétköznapi életben is szinte naponta van használva a parkolók esetén. 
+Projektünk célja egy olyan rendszer megvalósítása, ami a hétköznapi életben is napi szinten van alkalmazva parkolóházakban. 
 Egy kamera (esetünkben egyszerűsítettük a helyzetet, képpel dolgozunk) felismeri egy rendszámot, string-et képez belőle, amit
-eltudunk tárolni az adatázisunkban. Az adatbázis tárolja az autó rendszámát, illetve felvétel időpontját. Továbbiakban már nem
+el tudunk tárolni az adatbázisunkban. Az adatbázis tárolja az autó rendszámát, illetve a felvétel időpontját. Továbbiakban már nem
 lenne nehéz kiszámolni a parkolás időtartamát sem. (ha mégegyszer detektáljuk a rendszámot, a két időpontot vonja ki egy másból).
 
 **Esetünkben ez két nagyobb feladatot jelent:**
-- Rendszám felismerés(opencv,ocr,tesseract)
+- Rendszám felismerés (opencv, ocr, tesseract)
   - Pogácsás Gergely
   - Barcza Bende
-- Eltárolása/adatbázisba foglalása(sqlite3)
+- Eltárolása/adatbázisba foglalása (sqlite3)
   - Tóth Imre
   - Gácsi László
 
 **OCR, szövegfelismerés:**
-
+Az autó képéhez - melyen a rendszám lehetőleg vízszintes, világos, a lehető legjobban minőségű - tartozó elérési útvonalat megadva 
+a program több lépésben elemzi a kapott képet.
+Szürkeárnyalatossá teszi első lépésben a megadott képfájlt. 
+A következőkben éleket keres, majd lépésenként "butítja" a képet. 
+A kontúrvonalakat zöld színnel feltünteti az eredeti képen, majd a potenciális rendszámot (/rendszámokat) pirossal jelzi. 
+Ha bizonyos feltételeknek megfeleltek ezek a piros kerettel ellátott mezők, akkor megkapjuk a kivágott rendszámtáblát. 
+Ezt a képet Tesseract-tal lefuttatjuk, felismerjük a rajta található stringeket, melyeket változóként raktározunk el a későbbi adatbázis rendszer érdekben. 
+A fenti lépések az Internet, pontosabban egy leleményes python programozó érdeme, mi "csak" utánajártunk, kijavítottuk a hibákat, optimalizáltuk, aktualizáltuk a kódot.
 
 **Adatbázis:**
 Az autók rendszerezését adatbázisba foglalással képzeltük el, ehhez a python sqlite3 adatbázis rendszerét vettük
