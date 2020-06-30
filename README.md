@@ -7,12 +7,16 @@ lenne nehéz kiszámolni a parkolás időtartamát sem. (ha mégegyszer detektá
 
 **Esetünkben ez két nagyobb feladatot jelent:**
 - Rendszám felismerés(opencv,ocr,tesseract)
+  - Pogácsás Gergely
+  - Barcza Bende
 - Eltárolása/adatbázisba foglalása(sqlite3)
+  - Tóth Imre
+  - Gácsi László
 
-OCR, szövegfelismerés:
+**OCR, szövegfelismerés:**
 
 
-Adatbázis:
+**Adatbázis:**
 Az autók rendszerezését adatbázisba foglalással képzeltük el, ehhez a python sqlite3 adatbázis rendszerét vettük
 igénybe. Ennek a segítségével alap sql parancsok használatával (SELECT,DELETE,INSERT...stb) tudtuk rendszerezni autóinkat.
 Az adatbázisban létrehoztunk egy adattáblát, amelyben helyet kap a Rendszám, és az időpont attribútum. Célszerűnek
