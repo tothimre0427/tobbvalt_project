@@ -23,6 +23,8 @@ Ha bizonyos feltételeknek megfeleltek ezek a piros kerettel ellátott mezők, a
 Ezt a képet Tesseract-tal lefuttatjuk, felismerjük a rajta található stringeket, melyeket változóként raktározunk el a későbbi adatbázis rendszer érdekben. 
 A fenti lépések az Internet, pontosabban egy leleményes python programozó érdeme, mi "csak" utánajártunk, kijavítottuk a hibákat, optimalizáltuk, aktualizáltuk a kódot.
 
+Szakirodalom ehhez a témához, ahonnan az alapot vettük: https://gist.github.com/ialong/ab2c87ce49a8f3a3a876#file-anpr-ipynb
+
 **Adatbázis:**
 Az autók rendszerezését adatbázisba foglalással képzeltük el, ehhez a python sqlite3 adatbázis rendszerét vettük
 igénybe. Ennek a segítségével alap sql parancsok használatával (SELECT,DELETE,INSERT...stb) tudtuk rendszerezni autóinkat.
