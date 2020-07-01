@@ -32,3 +32,4 @@ egy garázsban, már egyszerűen megtehető. Ehhez az egészhez egy windows abla
 4 funciót tartalmaz (persze, ezek bővíthetőek igény szerint): Keresés, új rendszám hozzáadása, törlése és az összes
 listázása. (Valós életben is előfordulhat hogy manuálisan kell hozzáadni/törölni).
 Részletesebb parancsok értelmezésére próbáltuk minél jobban kommentelni a programot.
+Megjegyzés: Ha először van lefuttatva az adatbazis, akkor még autó nem lesz benne.
